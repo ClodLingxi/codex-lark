@@ -100,7 +100,7 @@ codex plugin add feishu2codex@codex-lark
 
    ![试用 Feishu to Codex 设置提示词](docs/images/try-feishu-setup.jpg)
 
-2. Codex 提示时，检查并信任插件的设置 Hook。首个新任务启动后，Hook 会检测 `lark-cli` 是否可用；如果缺失，会自动安装与插件匹配的 `lark-cli@1.0.73`。
+2. Codex 提示时，检查并信任插件的设置 Hook。首个新任务启动后，Hook 会检测 `lark-cli` 是否可用；如果缺失，会自动安装与插件匹配的 `lark-cli@1.0.96`。
 3. Codex 随后运行内置的 `lark-setup` 流程，按顺序给出飞书/Lark 应用配置和用户 OAuth 所需的链接或二维码。打开链接或扫码，在飞书/Lark 中完成当前步骤，再回复 Codex；Codex 会继续发起用户授权并验证连接。
 
    ![Codex 自动安装 Lark CLI 并显示飞书授权流程](docs/images/feishu-setup-authorization-redacted.jpg)
@@ -116,7 +116,7 @@ Codex 不会在 Marketplace 安装事务本身执行任意命令。点击“试�
 下面的命令依次完成 CLI 安装、应用配置、用户授权和连接验证：
 
 ```bash
-npm install --global --no-audit --no-fund @larksuite/cli@1.0.73
+npm install --global --no-audit --no-fund @larksuite/cli@1.0.96
 lark-cli config init --new
 lark-cli auth login --recommend
 lark-cli auth status --json --verify

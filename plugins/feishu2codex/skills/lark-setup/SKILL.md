@@ -18,10 +18,10 @@ command -v lark-cli && lark-cli --version
 If `lark-cli` is still missing, verify that `npm` is available, then install the runtime version matching the bundled Skills:
 
 ```bash
-npm install --global --no-audit --no-fund @larksuite/cli@1.0.73
+npm install --global --no-audit --no-fund @larksuite/cli@1.0.96
 ```
 
-Run `lark-cli --version` again and require version `1.0.73` before continuing. If `npm` is unavailable, tell the user that Node.js/npm is required and stop before attempting authentication.
+Run `lark-cli --version` again and require version `1.0.96` before continuing. If `npm` is unavailable, tell the user that Node.js/npm is required and stop before attempting authentication.
 
 ## 2. Configure and authenticate
 

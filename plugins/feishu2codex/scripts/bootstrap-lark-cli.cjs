@@ -4,7 +4,7 @@ const { spawnSync } = require("node:child_process");
 const fs = require("node:fs");
 const path = require("node:path");
 
-const REQUIRED_VERSION = "1.0.73";
+const REQUIRED_VERSION = "1.0.96";
 const PACKAGE = `@larksuite/cli@${REQUIRED_VERSION}`;
 const isWindows = process.platform === "win32";
 const commandSuffix = isWindows ? ".cmd" : "";

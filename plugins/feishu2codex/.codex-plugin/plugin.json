@@ -1,6 +1,6 @@
 {
   "name": "feishu2codex",
-  "version": "1.0.73",
+  "version": "1.0.96",
   "description": "Community Codex plugin packaging lark-cli skills for Feishu and Lark workflows.",
   "author": {
     "name": "Codex Lark contributors"

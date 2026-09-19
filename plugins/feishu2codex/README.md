@@ -2,7 +2,7 @@
 
 Community packaging of the Skills from the official [Lark CLI](https://github.com/larksuite/cli) project, plus a Codex setup Skill.
 
-The bundled Skills are synced from [`larksuite/cli@6675e3c`](https://github.com/larksuite/cli/commit/6675e3c2472f773035524d57651a081f81c7fd06), CLI version `1.0.73`.
+The bundled Skills are synced from [`larksuite/cli@32d1988`](https://github.com/larksuite/cli/commit/32d198896816e9416711468c20b14df3dbbc63f3), CLI version `1.0.96`.
 
 Codex does not execute arbitrary commands inside the Marketplace install transaction. After installing the plugin, review and trust its `SessionStart` hook, then start a new task and ask:
 
@@ -11,7 +11,7 @@ Codex does not execute arbitrary commands inside the Marketplace install transac
 The hook installs the matching official runtime when needed and requires setup before Lark workflows are treated as ready. The `lark-setup` Skill then follows the browser/device OAuth flow. Manual fallback:
 
 ```bash
-npm install --global --no-audit --no-fund @larksuite/cli@1.0.73
+npm install --global --no-audit --no-fund @larksuite/cli@1.0.96
 ```
 
 Then configure and authorize it locally:

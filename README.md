@@ -100,7 +100,7 @@ Fully restart the ChatGPT/Codex desktop app after installation, review and trust
 
    ![Try the Feishu to Codex setup prompt](docs/images/try-feishu-setup.jpg)
 
-2. Review and trust the plugin's setup Hook when Codex asks. On this first new task, the Hook detects whether `lark-cli` is available and automatically installs the matching `lark-cli@1.0.73` runtime when it is missing.
+2. Review and trust the plugin's setup Hook when Codex asks. On this first new task, the Hook detects whether `lark-cli` is available and automatically installs the matching `lark-cli@1.0.96` runtime when it is missing.
 3. Codex starts the bundled `lark-setup` workflow and displays the links or QR codes needed for Feishu/Lark application configuration and user OAuth. Open the link or scan the QR code, complete the step in Feishu/Lark, and then reply to Codex so it can continue and verify the connection.
 
    ![Codex installs Lark CLI and displays the Feishu authorization flow](docs/images/feishu-setup-authorization-redacted.jpg)
@@ -116,7 +116,7 @@ Codex does not run arbitrary commands inside the Marketplace installation transa
 The following commands perform the equivalent CLI installation, application configuration, user authorization, and connection check:
 
 ```bash
-npm install --global --no-audit --no-fund @larksuite/cli@1.0.73
+npm install --global --no-audit --no-fund @larksuite/cli@1.0.96
 lark-cli config init --new
 lark-cli auth login --recommend
 lark-cli auth status --json --verify
